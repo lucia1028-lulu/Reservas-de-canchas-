@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f9f9f9; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #009688; 
+    color: #fff;
+    padding: 20px 64px;
+    gap: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-logo {
+    width: 32px; 
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1; 
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;      
+    gap: 20px;
+}
+
+.menu .nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px; 
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.18s ease;
+}
+
+.menu .nav-item:hover,
+.menu .nav-item.active {
+    color: #ffeb3b; 
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* Usuario */
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-usuario { 
+    width: 46px; 
+    border-radius: 50%;
+}
+.icon-salida { 
+    width: 32px; 
+    cursor: pointer; 
+}
+
+.logout img {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.logout img:hover {
+    transform: scale(1.1);
+}
+
+.main-content {
+    flex: 1; 
+    padding: 30px 64px;
+    display: flex;
+    justify-content: center; 
+}
+
+.mis-reservas-section {
+    width: 100%;
+    max-width: 800px; 
+}
+
+.reservas-info-box {
+    background-color: #e0f7fa; 
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.reservas-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #009688;
+}
+
+.reservas-list {
+    text-align: center;
+}
+
+.no-reservas-message {
+    color: #777;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #009688;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: auto; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .menu {
+        width: 100%; 
+        justify-content: flex-start;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+}
