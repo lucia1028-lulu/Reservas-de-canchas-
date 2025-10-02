@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar Canchas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #f5f5f5;
+    }
+
+    /* Encabezado */
+    header {
+      background: #00796B;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sección Reservar */
+    .reservar {
+      flex: 1;
+      padding: 30px;
+      text-align: left; /* título y contenido alineado a la izquierda */
+    }
+
+    .reservar h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: 320px; /* tamaño fijo */
+      text-align: center;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .card strong {
+      color: #333;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00796B;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #004d40;
+    }
+
+    /* Footer */
+    footer {
+      background: #00796B;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 16px;
+      margin-top: auto;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <!-- LOGO DE PELOTA DE FÚTBOL -->
+      <img src="../imagenes/logo.png" alt="Pelota">
+      <h1>Alquiler de Cancha</h1>
+    </div>
+    <nav>
+      <a href="#">Canchas</a>
+      <a href="#">Academias</a>
+      <a href="#">Mis Reservas</a>
+      <a href="#">Editar Cuenta</a>
+      <a href="#">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <!-- Sección Reservar -->
+  <section class="reservar">
+    <h2>Reservar Canchas</h2>
+    <div class="card">
+      <img src="../imagenes/futbol.jpg" alt="Cancha">
+      <p><strong>Cancha sintética</strong></p>
+      <p>Tipo: Fútbol</p>
+      <p><strong>Precio:</strong> 30 x hra</p>
+      <a href="#" class="btn">ALQUILAR</a>
+    </div>
+  </section>
+  <!-- Pie de página -->
+
+  <footer>
+    Av Misericordia - Monsefú
+  </footer>
+</body>
+</html>
+
